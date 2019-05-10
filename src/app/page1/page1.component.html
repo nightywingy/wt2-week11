@@ -1,0 +1,11 @@
+<ActionBar title="Country" class="action-bar">
+</ActionBar>
+
+<ScrollView>
+    <StackLayout>
+        <Label 
+            *ngFor="let country of countries" 
+            [text]="country.CountryName"
+            [nsRouterLink]="['/page2', country.CountryName]"></Label>
+    </StackLayout>
+</ScrollView>
